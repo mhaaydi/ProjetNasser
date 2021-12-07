@@ -1,0 +1,170 @@
+<!DOCTYPE html>
+<html lang="fr">
+  <!--
+    Auteur : Jérémy Mouzin (www.javascriptdezero.com)
+    Twitter : https://twitter.com/jeremymouzin
+    GitHub du code source de ce site : https://github.com/javascriptdezero/ressources-dev-web
+    ?? N'hésitez pas à jeter un oeil au code source ! C'est fait pour ça ??.
+    Tout le code source de ce site (HTML, CSS, JavaScript) est disponible et commenté en français sur GitHub dans un but pédagogique. N'hésitez pas à partager ce site à vos amis débutants dans le développement web. Merci ??.
+  -->
+  <head>
+
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+
+    <!-- Ajout de Google Analytics pour suivre le trafic sur ce site -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=UA-114307881-4"></script>
+    <script>
+      window.dataLayer = window.dataLayer || [];
+      function gtag(){dataLayer.push(arguments);}
+      gtag('js', new Date());
+
+      gtag('config', 'UA-114307881-4');
+    </script>
+
+    <link
+      rel="stylesheet"
+      href="https://use.fontawesome.com/releases/v5.7.2/css/all.css"
+      integrity="sha384-fnmOCqbTlWIlj8LyTjo7mOUStjsKC4pOpQbqyi7RrhN7udi9RwhKkMHpvLbHG9Sr"
+      crossorigin="anonymous"
+    />
+
+    <!-- Chargement de polices de caractères sympathiques -->
+    <link href="https://fonts.googleapis.com/css?family=Permanent+Marker" rel="stylesheet">
+
+    <!--
+      On fait en sorte que le design apparaisse de la même façon sur tous les navigateurs.
+      C'est la façon moderne d'appliquer un reset CSS, j'utilise Normalize.css pour ça.
+      Plus d'infos sur https://necolas.github.io/normalize.css/
+     -->
+    <link rel="stylesheet" href="./css/normalize.css" />
+
+    <!-- On ajoute le style.css de notre cru ! -->
+    <link rel="stylesheet" href="./css/style.css" />
+
+    <!--
+      On ajoute du code pour l'affichage du site dans Twitter (Twitter Cards) 
+      Doc : https://developer.twitter.com/en/docs/tweets/optimize-with-cards/guides/getting-started.html
+    -->
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:site" content="@JeremyMouzin">
+    <meta name="twitter:creator" content="@JeremyMouzin">
+    <meta property="og:url" content="https://www.ledevweb.fr" />
+    <meta name="title" content="Les meilleures ressources pour apprendre le développement web" />
+    <meta  name="description" content="Découvrez les meilleures ressources en français pour apprendre le développement web." />
+    <meta property="og:image" content="https://www.ledevweb.fr/images/twitter-card.jpg" />
+    
+    <title>Les chaînes YouTube françaises sur le développement web</title>
+  </head>
+  <body>
+    <header>
+      <h1>
+        Les chaînes <img src="images/youtube.png" alt="logo youtube" />YouTube françaises sur le développement web
+      </h1>
+
+      <section id="slogan">
+        <p>
+          Pas facile de trouver les meilleurs développeurs web français sur YouTube...<br /><br />
+          Ne cherchez plus.<br />Je les ai listés pour vous.
+        </p>
+
+        <div id="vignettes">
+          <img src="images/anthony-welc.jpg" alt="Anthony Welc" />
+          <img src="images/apprendre-a-coder.jpg" alt="Apprendre à coder" />
+          <img src="images/benjamin-code.jpg" alt="Benjamin Code" />
+          <img src="images/dev-theory.jpg" alt="Dev Theory" />
+          <img src="images/developpeur-libre.jpg" alt="Développeur Libre" />
+          <img src="images/god-of-macro.jpg" alt="GodOfMacro" />
+          <img src="images/grafikart.jpg" alt="Grafikart" />
+          <img src="images/jeremy-mouzin.jpg" alt="Jérémy Mouzin" />
+          <img src="images/graven.jpg" alt="Graven" />
+          <img src="images/les-teachers-du-net.jpg" alt="Les teachers du Net" />
+          <img src="images/lior-chamla.jpg" alt="Lior Chamla" />
+          <img src="images/mike.jpg" alt="Mike Codeur" />
+          <img src="images/pierre-giraud.jpg" alt="Pierre Giraud" />
+          <img src="images/pierre-terrat.jpg" alt="Pierre Terrat" />
+          <img src="images/primfx.jpg" alt="PrimFX" />
+          <img src="images/thibaud-dauce.jpg" alt="Thibaud Dauce" />
+        </div>
+      </section>
+    </header>
+
+    <section class="infos">
+      <div class="bloc-info" id="make-it-grow">
+        <span class="mini-titre">Make it grow</span>
+        <p>
+          Ajoutez votre chaîne préférée ou demandez une fonctionnalité : un tweet sur
+          <a href="https://twitter.com/jeremymouzin">JeremyMouzin</a> me suffira.
+        </p>
+      </div>
+      <div class="bloc-info" id="merci">
+        <span class="mini-titre">Merci !</span>
+        <p>
+          Merci à tous ceux qui ont déjà partagé leurs chaînes préférées et m'ont fait des retours constructifs sur ce
+          site !
+        </p>
+      </div>
+      <div class="bloc-info" id="share-the-love">
+        <span class="mini-titre">Share the love</span>
+        <p>Vous aimez cette liste ? Vous voulez la voir grossir ? Alors partagez-là avec le bouton ci-dessous :</p>
+        <p><a href="https://twitter.com/share?ref_src=twsrc%5Etfw" class="twitter-share-button" data-size="large" data-text="Découvrez la #liste de tous les #webdev français sur #YouTube. Parfait pour apprendre le développement web en vidéo !" data-url="https://www.ledevweb.fr" data-via="JeremyMouzin" data-related="JeremyMouzin" data-lang="fr" data-show-count="false">Tweet</a><script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script></p>
+      </div>
+      <div class="bloc-info" id="coming-soon">
+        <span class="mini-titre">Coming soon</span>
+        <p>
+          Filtrage par langage, framework, outil. Classement par nombre de vues, nombre de vidéos et d'abonnés. Ajout
+          des comptes Twitter.
+        </p>
+      </div>
+      <div class="bloc-info" id="un-affichage-juste">
+        <span class="mini-titre">Un affichage juste</span>
+        <p>
+          La liste est affichée de façon aléatoire à chaque chargement pour permettre aux chaînes peu connues de se
+          faire connaître.
+        </p>
+        <p id="mini-texte">(Car on ne lit jamais une longue liste toute entière, seulement le début )</p>
+      </div>
+      <div class="bloc-info" id="vocation-pedagogique">
+        <span class="mini-titre">Un code à vocation pédagogique</span>
+        <p>L'intégralité du <a href="https://github.com/javascriptdezero/ressources-dev-web">code source de ce site</a> a été rédigé et commenté en français dans un but pédagogique. J'explique aussi tous mes choix techniques.</p>
+      </div>
+    </section>
+
+    <!-- Shameless plug! (Je fais ma pub, non j'ai pas honte ??) -->
+    <section id="votre-serviteur">
+      <div class="contenu">
+        <img src="images/jeremy-mouzin.jpg" alt="Jérémy Mouzin" />
+        <div class="bloc-info">
+          <span class="mini-titre">Votre serviteur</span>
+          <p>
+            Je suis le créateur de la formation vidéo
+            <a href="https://www.javascriptdezero.com">JavaScript de Zéro</a> qui vous apprend à programmer sans
+            connaissance préalable.
+          </p>
+        </div>
+      </div>
+    </section>
+
+    <section id="section-liste">
+      <h2 id="titre-la-liste">La liste</h2>
+      
+      <!-- Compteur dynamique du nombre total de chaînes YouTube affichées -->
+      <div id="conteneur-compteur"><p id="compteur">chaînes YouTube</p></div>
+
+      <!--
+        Voici l'élément liste non ordonnée (<ul>) qui va contenir la liste des développeurs web !	
+        La liste est vide ici car elle sera alimentée dynamiquement par le code dans script.js.
+      -->
+      <ul id="liste">
+      </ul>
+    </section>
+
+    <script src="./js/script.js"></script>
+
+    <footer>
+      <p>Design et Code par <a href="https://twitter.com/jeremymouzin">Jérémy Mouzin</a>.</p>
+      <p><a href="https://github.com/javascriptdezero/ressources-dev-web">Code source sur GitHub</a>, commenté en  français avec .</p>
+    </footer>
+  </body>
+</html>

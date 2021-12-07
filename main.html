@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <link rel="stylesheet" href="css/main.css">
+
+  <title>File Upload</title>
+</head>
+ 
+<body>
+
+<ul>
+  <li><a class="active" href="/projetNasser/main.html">Ajouter file</a></li>
+  <li><a href="/projetNasser/search/search.php">Chercher mot</a></li>
+  <li><a href="/projetNasser/TagCloud/listeFile.php">Nuage de mot</a></li>
+</ul>
+</br></br>
+ <form enctype="multipart/form-data" method="post" action="upload.php">
+    Send this file: 
+	<input name="userfile" type="file"  /><br />
+	</br>
+    <input type="submit" value="Send File" />
+	
+</form>
+</body>
+</html>
